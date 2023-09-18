@@ -17,7 +17,7 @@ const Home = () => {
     useEffect(() => {
         setLoading(true)
         axios
-            .get('http://localhost:4000/books')
+            .get('https://bookbackend-hazel.vercel.app/books')
             .then((res) => {
                 setBooks(res.data.data)
                 setLoading(false)
