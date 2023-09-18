@@ -11,7 +11,7 @@ const ShowBook = () => {
  const {id} = useParams()
  useEffect( () => {
   setLoading(true)
-  axios.get(`http://localhost:4000/books/${id}`)
+  axios.get(`https://bookbackend-hazel.vercel.app/books/${id}`)
   .then((res) => {
      setBook(res.data)
      setLoading(false)
