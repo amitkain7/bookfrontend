@@ -16,7 +16,7 @@ const EditBook = () => {
   })
       const {enqueueSnackbar } = useSnackbar()
    useEffect( () => {
-    axios.get(`http://localhost:4000/books/${id}`)
+    axios.get(`https://bookbackend-hazel.vercel.app/books/${id}`)
     .then((res) => { 
       setData({ title:res.data.title, author:res.data.author, publishYear: res.data.publishYear})
   
@@ -31,7 +31,7 @@ const EditBook = () => {
 
   const handleEditBook = () => {
 
-    axios.put(`http://localhost:4000/books/${id}`, data)
+    axios.put(`https://bookbackend-hazel.vercel.app/books/${id}`, data)
       .then((res) => {
         enqueueSnackbar('Book edited successfully! ' , {variant:'success'})
         navigate('/')
