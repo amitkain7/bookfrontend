@@ -8,7 +8,7 @@ import { MdOutlineDelete } from 'react-icons/md';
 import { useState } from 'react';
 import BookModel from './BookModel';
 function BookSingleCard({ item }) {
-    console.log(item)
+    // console.log(item)
     const [showModel, setShowModel] = useState(false)
     return (
         <div className='border-2 border-gray-500 rounded-lg px-4 py-2 m-4 relative hover:shadow-xl'>
