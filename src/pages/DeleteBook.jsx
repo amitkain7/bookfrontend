@@ -11,7 +11,7 @@ const DeleteBook = () => {
 
   const handleDeleteBook = () => {
 
-    axios.delete(`http://localhost:4000/books/${id}`)
+    axios.delete(`https://bookbackend-hazel.vercel.app/books/${id}`)
       .then((res) => {
         enqueueSnackbar('Book Delete successfully!' , {variant: 'info'})
         navigate('/')
