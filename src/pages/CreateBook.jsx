@@ -18,7 +18,7 @@ const CreateBook = () => {
 
   const handleSaveBook = () => {
 
-    axios.post('http://localhost:4000/books', data)
+    axios.post('https://bookbackend-hazel.vercel.app/books', data)
       .then((res) => {
       enqueueSnackbar('Book created successfully!  ', {variant : 'success'})
         navigate('/')
